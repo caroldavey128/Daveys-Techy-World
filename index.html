@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="=width=device-width, initial-scale=1.0" />
+    <title>My Week 3 Website Using Bootstrap</title>
+
+    <!-- Bootstrap CSS 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Link for style.css -->
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/Davey-logo2.png" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <!-- Navigation List -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Advertising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+
+                    <!-- Drop Down List for Social Media -->
+                    <li class="nav-item dropdown">  
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Follow
+                        </a>
+                        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.facebook.com/"><i class="fab fa-facebook"></i> Facebook </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i> Twitter </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i> LinkedIn </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.youtube.com/"><i class="fab fa-youtube"></i> Youtube </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--- 4 Image Sliders -->
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+            <li data-target="#slides" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slide1.jpg" />
+                <div class="carousel-caption">
+                    <h1 class="display-2">The Apple iMac</h1>
+                    <h3>Inspired by the best of Apple.</h3>
+                    <a href="https://www.apple.com/ca/imac-24/specs/">
+                        <button type="button" class="btn btn-outline-light btn-lg">Whats New?</button>
+                    </a>
+                    <a href="https://www.apple.com/ca/shop/buy-mac/imac">
+                        <button type="button" class="btn btn-primary btn-lg">Buy Online</button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide2.jpg" />
+                <div class="carousel-caption">
+                    <h1 class="display-2">Gaming Section</h1>
+                    <h3>Brings the latest video game news.</h3>
+                    <a href="https://www.theverge.com/tech">
+                        <button type="button" class="btn btn-outline-light btn-lg">Trending Techs</button>
+                    </a>
+                    <a href="https://www.theverge.com/reviews">
+                        <button type="button" class="btn btn-primary btn-lg">Tech Reviews</button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide3.jpg" />
+                <div class="carousel-caption">
+                    <h1 class="display-2">Mobile App Development</h1>
+                    <h3>Bright future for mobile applications.</h3>
+                    <a href="https://www.digitaltrends.com/mobile/best-news-apps/">
+                        <button type="button" class="btn btn-outline-light btn-lg">Best New Apps</button>
+                    </a>
+                    <a href="https://www.pcmag.com/categories/mobile-apps">
+                        <button type="button" class="btn btn-primary btn-lg">App Reviews</button>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide4.jpg" />
+                <div class="carousel-caption">
+                    <h1 class="display-2">DJI Drones</h1>
+                    <h3>Images from the Sky.</h3>
+                    <a href="https://www.dji.com/ca">
+                        <button type="button" class="btn btn-outline-light btn-lg">Featured Drones</button>
+                    </a>
+                    <a href="https://store.dji.com/ca/shop/mavic-series?from=menu_icon">
+                        <button type="button" class="btn btn-primary btn-lg">Buy Online</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Jumbotron -->
+
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="https://getbootstrap.com/">
+                    <button type="button" class="btn btn-primary btn-xl">
+                        Go to Bootstrap
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- Two Column Section -->
+
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>What technology does for Us today</h2>
+                <p>Technology is supposed to make our lives easier, allowing us to do things more quickly and efficiently. But too often it seems to make things harder, leaving us with fifty-button remote controls, digital cameras with hundreds of mysterious features and book-length manuals, and cars with dashboard systems worthy of the space shuttle.</p>
+                <p>Technology is a gift of God. After the gift of life it is perhaps the greatest of God's gifts. It is the mother of civilizations, of arts and of sciences.</p>
+                <p>Technology gives us power, but it does not and cannot tell us how to use that power. Thanks to technology, we can instantly communicate across the world, but it still doesn't help us know what to say.</p>
+                <p>If we continue to develop our technology without wisdom or prudence, our servant may prove to be our executioner.</p>
+                <br />
+                <a href="https://en.wikipedia.org/wiki/Technology" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="img/pic5.jpg" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+    <hr class="my-4" />
+
+    <!--- Fixed background -->
+
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+    <!--- Emoji Section -->
+
+    <button class="fun" data-toggle="collapse" data-target="#emoji">
+        Click to View Emojis
+    </button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/yay-hooray.gif" />
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/cute-adorable.gif" />
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/pentol-quby.gif" />
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="img/gif/happy-dance.gif" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- New Releases -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Tech Releases</h1>
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    <!--- Card Views -->
+
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/sonydrone.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Sony Airpeak S1</h4>
+                        <p class="card-text">It’s a perfect gadget for content creators and professional photographers.</p>
+                        <a href="https://electronics.sony.com/airpeak/p/arss1" class="btn btn-outline-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/iphone13.jfif" />
+                    <div class="card-body">
+                        <h4 class="card-title">Apple iPhone 13 Pro</h4>
+                        <p class="card-text">The biggest Pro camera system upgrade ever. Lightning-fast A15 Bionic chip.</p>
+                        <a href="https://www.apple.com/ca/iphone-13-pro/" class="btn btn-outline-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/occulus-quest.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Oculus Quest 2</h4>
+                        <p class="card-text">Oculus Quest 2 is a virtual reality headset created by Oculus, a brand of Facebook. It is the successor to the Oculus Quest. </p>
+                        <a href="https://www.oculus.com/quest-2/?locale=en_CA&utm_source=gg&utm_medium=ps&utm_campaign=11098710205&utm_term=oculus%20quest%202&utm_content=516884919523&utm_ad=110505183082&utm_location=9000819&utm_location2&utm_placement=kwd-563298318914&utm_device=c&utm_matchtype=e&utm_feed&utm_adposition&gclsrc=aw.ds&&gclid=CjwKCAjw7rWKBhAtEiwAJ3CWLNKwYWDZaflGCDc0ZtmcX_I3G1St1Av-A1WToGbidMzNfVuq2rNi2RoCPvkQAvD_BwE" class="btn btn-outline-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--- Bootstrap Welcome -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Built with ease.</h1>
+            </div>
+            <hr />
+            <div class="col-12">
+                <p class="lead">Welcome to my Bootstrap 4 website tutorial! Bootstrap is a free and open-source front-end library with HTM and CSS based designs.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- Three Column Section -->
+
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+                <p>Built with the latest version of HTML, HTML5.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP</h3>
+                <p>Built with the latest version of Bootstrap, Bootstrap 4.</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fab fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Built with the latest version of CSS, CSS3.</p>
+            </div>
+        </div>
+        <hr class="my-4" />
+    </div>
+
+    <!--- Social Media -->
+
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Follow me</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--- Footer -->
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-md-4">
+                    <img src="img/Davey-logo3.png" />
+                    <hr class="light" />
+                    <p>647-219-4560</p>
+                    <p>techydavey@yahoo.com</p>
+                    <p>2445 The Collegeway</p>
+                    <p>Mississauga, Ontario, L5L 2E5</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light" />
+                    <h5>Services</h5>
+                    <hr class="light" />
+                    <p>Buy and Sell</p>
+                    <p>Repair Center</p>
+                    <p>Store Locations</p>
+                    <p>Help and Support</p>
+                    <p>Trust and Safety</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light" />
+                    <h5>About</h5>
+                    <hr class="light" />
+                    <p>Press and News</p>
+                    <p>Partnerships</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100" />
+                    <h5>&copy; www.techydavey.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Java Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Java Script-->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</body>
+</html>
